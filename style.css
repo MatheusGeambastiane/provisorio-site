@@ -1,0 +1,112 @@
+:root {
+    --principal-color:white;
+    --font-principal: 'Inter'
+    
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-principal);
+    font-weight: 400;
+}
+.banner-text {
+    padding-top: 200px;
+    color: #ffd800;
+    
+
+}
+
+.main-content {
+    color: var(--principal-color);
+    background-image: url(./assets/background.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+
+#logo {
+    width: 595px;
+    height: 284px;
+    display: inline;
+    padding: 20px;
+
+}
+
+.social-media {
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.media-image {
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+}
+.media-image:hover{
+    width: 150px;
+    height: 150px;
+    transition: 0.5s;
+    padding-bottom: -50px;
+}
+
+@keyframes turnsun {
+    0% {
+        transform: rotate(0);
+
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.turner{
+    position: fixed;
+
+    width: 200px; 
+    height: 200px;
+    bottom: 40px;
+    left: 40px;
+    padding: 0;
+    margin: 0;
+    animation: turnsun 2s linear infinite;
+    
+}
+
+@media screen and (max-width: 428px) {
+    
+    .banner-text {
+        font-size: 20px;
+        padding-top: 150px;
+    }
+
+    .second-text{
+        font-size: 15px;
+    }
+    
+    #logo {
+        width: 200px;
+        height: 120px;
+    }
+
+    .media-image{
+        
+        width: 50px;
+        height: 50px;
+
+    }
+
+
+    .turner{
+        width: 50px;
+        height: 50px;
+    }
+}
