@@ -13,11 +13,16 @@
     font-weight: 400;
 }
 .banner-text {
-    padding-top: 200px;
+    padding-top:150px;
     color: #ffd800;
-    
+    font-size: 40px;
+
 
 }
+.second-text{
+    font-size: 29px;
+}
+
 
 .main-content {
     color: var(--principal-color);
@@ -27,12 +32,15 @@
     height: 100vh;
     margin: 0;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 
 #logo {
-    width: 595px;
-    height: 284px;
+    width: 350px;
+    height: 179px;
     display: inline;
     padding: 20px;
 
@@ -44,15 +52,15 @@
     grid-template-columns: 50% 50%;
 }
 .media-image {
-    width: 100px;
-    height: 100px;
+    width: 65px;
+    height: 65px;
     transition: 0.5s;
 }
 .media-image:hover{
-    width: 150px;
-    height: 150px;
+    width: 95px;
+    height: 95px;
     transition: 0.5s;
-    padding-bottom: -50px;
+    margin-top: -50px;
 }
 
 @keyframes turnsun {
